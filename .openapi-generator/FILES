@@ -1,0 +1,16 @@
+.babelrc
+.gitignore
+.openapi-generator-ignore
+.travis.yml
+README.md
+docs/Contact.md
+docs/ContactApi.md
+git_push.sh
+mocha.opts
+package.json
+src/ApiClient.js
+src/api/ContactApi.js
+src/index.js
+src/model/Contact.js
+test/api/ContactApi.spec.js
+test/model/Contact.spec.js
