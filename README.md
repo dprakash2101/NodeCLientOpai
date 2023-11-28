@@ -99,17 +99,19 @@ Please follow the [installation](#installation) instruction and execute the foll
 
 ```javascript
 var KCrud = require('k_crud');
-
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
 
 var api = new KCrud.ContactApi()
-var callback = function(error, data, response) {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+var callback = function (error, data, response) {
+    if (error) {
+        console.error(error);
+    } else {
+        console.log('API called successfully. Returned data: ');
+        console.log(data);
+    }
 };
 api.contactGet(callback);
+****
 
 ```
 
